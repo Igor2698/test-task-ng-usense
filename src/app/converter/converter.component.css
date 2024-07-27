@@ -1,0 +1,19 @@
+.converter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.currency-input {
+  margin-bottom: 10px;
+}
+
+.currency-input input {
+  width: 200px;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+}
