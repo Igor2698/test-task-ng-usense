@@ -1,0 +1,9 @@
+<header>
+  <h1>Конвертер валют</h1>
+  <div></div>
+  <div *ngIf="rates">
+    <div *ngFor="let currency of currencies">
+      <p>{{ currency }}: {{ rates[currency] }}</p>
+    </div>
+  </div>
+</header>

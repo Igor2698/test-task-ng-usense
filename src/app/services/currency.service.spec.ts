@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CurrencyService {
-  private apiUrl = 'https://api.exchangerate-api.com/v4/latest/UAH';
+  private apiUrl = 'https://api.exchangerate-api.com/v4/latest/';
 
   constructor(private http: HttpClient) {}
 
-  getRates(): Observable<any> {
-    return this.http.get(this.apiUrl);
+  getRates(baseCurrency: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}${baseCurrency}`);
   }
 }

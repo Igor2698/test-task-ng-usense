@@ -1,0 +1,26 @@
+<div class="converter">
+  <div class="currency-input">
+    <app-custom-input
+      [(ngModel)]="amount1"
+      (ngModelChange)="onAmount1Change($event)"
+      type="number"
+    ></app-custom-input>
+    <app-currency-select
+      [(ngModel)]="currency1"
+      (ngModelChange)="onCurrency1Change($event)"
+      [currencies]="currencies"
+    ></app-currency-select>
+  </div>
+  <div class="currency-input">
+    <app-custom-input
+      [(ngModel)]="amount2"
+      (ngModelChange)="onAmount2Change($event)"
+      type="number"
+    ></app-custom-input>
+    <app-currency-select
+      [(ngModel)]="currency2"
+      (ngModelChange)="onCurrency2Change($event)"
+      [currencies]="currencies"
+    ></app-currency-select>
+  </div>
+</div>
